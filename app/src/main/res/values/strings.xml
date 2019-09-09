@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">蜗牛农场</string>
+
+    <string name="bottom_navigation_item_home">首页</string>
+    <string name="bottom_navigation_item_we">庄园</string>
+    <string name="bottom_navigation_item_cart">物流</string>
+    <string name="bottom_navigation_item_user">我的</string>
+
+    <string name="loading_full">没有更多了～</string>
+
+    <string name="home_tmall">农场</string>
+    <string name="home_suan">牧场</string>
+    <string name="home_global">鱼塘</string>
+    <string name="home_wai">港口</string>
+
+    <string name="home_first">头条</string>
+
+    <string name="toast_network_error">网络错误</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

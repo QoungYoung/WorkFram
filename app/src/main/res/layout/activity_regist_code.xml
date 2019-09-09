@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qongyong.esq.Regist.Regist_Phone"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/reg_code_phone"
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="384dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="97dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:gravity="center"
+        android:maxLength="6"
+        android:hint="输入验证码"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regist_code_text" />
+
+    <Button
+        android:id="@+id/regist_code_next"
+        android:layout_width="144dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="276dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape"
+        android:text="下一步"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regist_phone_num" />
+
+    <TextView
+        android:id="@+id/regist_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginLeft="117dp"
+        android:layout_marginRight="117dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="96dp"
+        android:text="输入短信验证码"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/regist_phone_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="206dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="356dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/regist_code_to"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_code_phone">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_weight="0"
+            android:text="发送验证码到   "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/regist_code_to"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regist_code_num"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/regist_code_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="null"
+            android:textColor="@android:color/holo_red_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/regist_code_text"
+            app:layout_constraintVertical_bias="0.835" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regist_code_to"
+        android:layout_width="97dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="348dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="重新发送"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_code_phone" />
+
+</android.support.constraint.ConstraintLayout>

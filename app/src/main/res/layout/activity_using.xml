@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Regist.Using">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="489dp"
+        android:layout_marginTop="46dp"
+        android:text="服务条款和隐私政策"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="11dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Title">
+
+            <TextView
+                android:id="@+id/TextTitle_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会员服务条款的确认 "
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text='易记方各项服务的所有权与运作权归香港中旅在线有限公司所有。本会员服务条款具有法律约束力。一旦您点选"注册"并通过注册程序，即表示您自愿接受本协议之所有条款，并已成为易记方的注册会员。' />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="服务内容"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="易记方服务的具体内容由易记方开发团队提供并对其所提供之服务拥有最终解释权。" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会员帐号及密码 "
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您注册会员成功后，将得到一个帐号和密码。您应妥善保管该帐号及密码，并对以该帐号进行的所有活动及事件负法律责任。因黑客行为或会员保管疏忽致使帐号、密码被他人非法使用的，易记方开发团队不承担任何责任。如您发现任何非法使用会员帐号或安全漏洞的情况，请立即与易记方开发团队联系" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会员权责"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="会员承诺不会通过易记方发布如下信息： (1) 反对宪法所确定的基本原则的； (2) 危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的； (3) 损害国家荣誉和利益的； (4) 煽动民族仇恨、民族歧视，破坏民族团结的； (5) 破坏国家宗教政策，宣扬邪教和封建迷信的；  (6) 散布谣言，扰乱社会秩序，破坏社会稳定的；  (7) 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的； (8) 侮辱或者诽谤他人，侵害他人合法权益的； (9) 含有法律、行政法规禁止的其他内容的。会员不得以任何方式干扰本站的服务。
+        如果会员违反上述规定，易记方有权要求其改正或直接采取一切必要措施（包括但不限于更改或删除会员发布的信息、中断或终止会员使用网络的权利等）。
+
+        " />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="免责声明"
+                android:textColor="@android:color/background_dark" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="-- 用户提供的信息仅代表其个人的立场与观点，与本应用的立场和观点无关。 -- 本应用对用户或第三方的以下损失概不承担任何责任： A 用户提供的信息由于不正确、不完整、不及时而导致的用户自身的损失； B 用户因错误理解和使用、复制或传播本应用上的内容而造成的损失、损害或用户提供的信息涉及侵犯他人的版权、署名权等纠纷，纯属其个人行为，与本应用无关。  C 用户通过本应用而获得的链接或通过链接获得的产品、服务或信息内容上的缺陷（如：内容的不完整、不及时等）与本应用概不相关，因本应用仅提供链接的渠道，而不负责对该网站或网页的维护。 D 因互联网本身的原因而引起的问题（如：网站服务导致的执行失败、错误、计算机病毒或计算机的硬件问题等而导致的问题）与本应用无关。 -- 本应用上提供的信息仅供用户参考。若用户或浏览者要使用，须进一步的调查与核实，否则引起的一切损失，本应用概不负责。 -- 本应用上的部分内容（如：图片）来源于互联网，因互联网上的作品权利人身份不便确认，故可能有部分内容涉及版权问题。若经核实涉及版权问题，本应用将即时予以删除或更正。 -- 本应用有权在本应用内使用用户在本应用上发表的信息（包括但不限于图片、游记等）。但用户在本应用上发表的信息若其它浏览者要转载，需经过本应用和该用户的许可，否则视为侵权。 因用户违反本法律声明而引发的任何一切索赔、损害等等，本应用概不负责。\n                                     " />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/acess"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginStart="136dp"
+        android:background="@drawable/shape"
+        android:text="同意"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+</android.support.constraint.ConstraintLayout>

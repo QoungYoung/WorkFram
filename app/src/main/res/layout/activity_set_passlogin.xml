@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qongyong.esq.Regist.Regist_setpwd">
+
+    <EditText
+        android:id="@+id/login_set_pwd"
+        android:layout_width="245dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="输入密码"
+        android:inputType="textPersonName"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_set_re_pwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_set_re_pwd"
+        android:layout_width="245dp"
+        android:layout_height="73dp"
+        android:layout_marginBottom="310dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginStart="58dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="再次输入密码"
+        android:inputType="textPassword"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_set_pwd" />
+
+    <Button
+        android:id="@+id/login_set_finsh"
+        android:layout_width="97dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="230dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginStart="206dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/shape"
+        android:text="完成"
+        android:textColor="@color/font_black_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regist_set_pwd" />
+
+    <TextView
+        android:id="@+id/login_set_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:text="密码6~14位，不建议使用连续纯数字！"
+        app:layout_constraintBottom_toTopOf="@+id/login_set_finsh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_set_re_pwd" />
+</android.support.constraint.ConstraintLayout>

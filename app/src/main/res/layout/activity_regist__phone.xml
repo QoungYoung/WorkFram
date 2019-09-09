@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qongyong.esq.Regist.Regist_Phone"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/regist_phone_num"
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="364dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="97dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="输入手机号码"
+        android:maxLength="11"
+        android:inputType="number"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/regist_phone_next"
+        android:layout_width="128dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="276dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape"
+        android:text="下一步"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regist_phone_num" />
+
+    <LinearLayout
+        android:layout_width="248dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="229dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regist_phone_next">
+
+        <CheckBox
+            android:id="@+id/regist_right"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_weight="0"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/regist_code_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regist_phone_num" />
+
+        <TextView
+            android:id="@+id/regist_phone_text"
+            android:layout_width="50dp"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:text="我已阅读并同意使用条款和隐私政策"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/regist_right"
+            app:layout_constraintTop_toBottomOf="@+id/regist_code_next"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
